@@ -1,32 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .App {
+  margin: 8px;
+}
+
+.home-page {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.element-container {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.attribute-container {
+  margin-left: 25px;
+}
+
+.body-container {
+  background-color: burlywood;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.body-container:hover {
+  background-color: beige;
+  transition: 500ms;
+}
+
+.results-title {
   display: flex;
-  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+  padding: 25px;
+}
+.pagination-container {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  background-color: burlywood;
+  border-radius: 15px;
+  align-items: baseline;
+}
+.pagination-container:hover {
+  background-color: beige;
+  transition: 500ms;
+}
+
+.pagination-tab {
+  margin: 7px;
+  cursor: pointer;
+}
+.nav-bar {
+  justify-content: space-evenly;
+  display: flex;
+  height: 60px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: burlywood;
 }
-
-.App-link {
-  color: #61dafb;
+.route-link {
+  text-decoration: none;
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-placeholder {
+  text-align: -webkit-center;
 }
